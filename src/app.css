@@ -84,4 +84,42 @@
       line-height: 1.7777777777777777778;
     }
   }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-700 text-neutral-800 inline-grid place-items-center leading-loose font-bold;
+  }
+
+  .icon-social-media {
+    @apply h-5 w-5 bg-neutral-600 hover:bg-neutral-800 inline-block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  .icon-social-media.facebook {
+    mask-image: url(/images/icon-facebook.svg);
+  }
+
+  .icon-social-media.instagram {
+    mask-image: url(/images/icon-instagram.svg);
+  }
+
+  .icon-social-media.twitter {
+    mask-image: url(/images/icon-twitter.svg);
+  }
+
+  .radius-pattern {
+    border-bottom-left-radius: 50% 1.125rem;
+    border-bottom-right-radius: 50% 1.125rem;
+
+    @screen md {
+      border-bottom-left-radius: 50% 2.25rem;
+      border-bottom-right-radius: 50% 2.25rem;
+    }
+
+    @screen lg {
+      border-bottom-left-radius: 50% 4.5rem;
+      border-bottom-right-radius: 50% 4.5rem;
+    }
+  }
 }
