@@ -17,58 +17,70 @@
 }
 
 @layer components {
+  .w-layout-md {
+    width: min(92%, 343px);
+
+    @screen md {
+      width: 35.8125rem;
+    }
+
+    @screen lg {
+      width: 69.5rem;
+    }
+  }
+
   .heading-lg {
-    font-size: 3.125rem;
+    font-size: 50px;
     line-height: 1;
     font-weight: 600;
     font-family: var(--serif);
 
     @screen md {
-      font-size: 3.75rem;
+      font-size: 60px;
     }
 
     @screen lg {
-      font-size: 5rem;
+      font-size: 80px;
     }
   }
 
   .heading-md {
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.5;
     font-weight: 600;
     font-family: var(--serif);
 
     @screen md {
-      font-size: 3rem;
+      font-size: 48px;
       line-height: 1.1666666666666666667;
     }
 
     @screen lg {
-      font-size: 3.5rem;
+      font-size: 56px;
       line-height: 1.1428571428571428571;
     }
   }
 
   .heading-sm {
-    font-size: 1.75rem;
+    font-size: 28px;
     line-height: 1.2857142857142857143;
     font-weight: 600;
     font-family: var(--serif);
 
     @screen lg {
-      font-size: 2rem;
+      font-size: 32px;
       line-height: 1.25;
     }
   }
 
   .body-md {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.75;
     font-weight: 400;
     font-family: var(--sans);
 
     @screen lg {
-      font-size: 1.125rem;
+      font-size: 18px;
       line-height: 1.7777777777777777778;
     }
   }
