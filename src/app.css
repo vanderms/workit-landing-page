@@ -87,6 +87,16 @@
 
   .btn-primary {
     @apply px-6 py-3 bg-primary-700 text-neutral-800 inline-grid place-items-center leading-loose font-bold;
+    @screen lg {
+      padding: 1rem 2rem;
+      line-height: 1.8125rem;
+    }
+  }
+
+  .btn-primary:hover {
+    outline: 2px solid var(--primary-700);
+    background-color: transparent;
+    color: var(--primary-700);
   }
 
   .icon-social-media {
