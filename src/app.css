@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neutral-800: #24053e;
+    --neutral-600: #584d62;
+    --neutral-100: #fcf8ff;
+    --neutral-25: #fff;
+
+    --primary-700: #44ffa1;
+
+    --serif: "Fraunces", serif;
+    --sans: "Manrope", sans-serif;
+  }
+}
+
+@layer components {
+  .heading-lg {
+    font-size: 3.125rem;
+    line-height: 1;
+    font-weight: 600;
+    font-family: var(--serif);
+
+    @screen md {
+      font-size: 3.75rem;
+    }
+
+    @screen lg {
+      font-size: 5rem;
+    }
+  }
+
+  .heading-md {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: var(--serif);
+
+    @screen md {
+      font-size: 3rem;
+      line-height: 1.1666666666666666667;
+    }
+
+    @screen lg {
+      font-size: 3.5rem;
+      line-height: 1.1428571428571428571;
+    }
+  }
+
+  .heading-sm {
+    font-size: 1.75rem;
+    line-height: 1.2857142857142857143;
+    font-weight: 600;
+    font-family: var(--serif);
+
+    @screen lg {
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+
+  .body-md {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 400;
+    font-family: var(--sans);
+
+    @screen lg {
+      font-size: 1.125rem;
+      line-height: 1.7777777777777777778;
+    }
+  }
+}
